@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+Video Speed Controller Chrome Extension
+This Chrome extension allows you to set custom playback speeds for videos on any website. With a simple and user-friendly interface, you can easily adjust video playback speed on platforms like YouTube or any other site with HTML5 video players.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Features
+Custom Playback Speed: Set video playback speed from 0.1x to 5x.
+Easy to Use: Simple input and apply button to quickly change the speed.
+Supports All Sites: Works on any website with HTML5 videos, including YouTube, Vimeo, and more.
+Installation
+Clone this repository:
+bash
+Copy code
+git clone https://github.com/your-username/video-speed-controller.git
+Navigate to the project directory:
+bash
+Copy code
+cd video-speed-controller
+Install dependencies and build the project:
+bash
+Copy code
+npm install
+npm run build
+Open Chrome and go to chrome://extensions/.
+Enable Developer mode in the top right corner.
+Click Load unpacked and select the build folder from this project.
+The extension will now be added to your Chrome browser.
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Usage
+Open a website with a video (e.g., YouTube).
+Click on the extension icon to open the Video Speed Controller.
+Enter your desired playback speed (e.g., 1.5 for 1.5x speed).
+Click Apply to set the speed for the video.
+Files and Folders
+public/manifest.json: The extension manifest file that provides metadata and configuration for Chrome.
+public/background.js: Background script for handling installation and extension setup.
+src/App.js: Main React component containing the UI for setting playback speed.
+src/App.css: CSS file to style the React component.
+Technologies Used
+React: For the frontend UI.
+JavaScript: To handle Chrome extension interactions.
+HTML5: Works with HTML5 video elements on any website.
+Customization
+You can change the styling, default speed, or any other feature by editing the App.js and App.css files in the src folder. Build and reload the extension in Chrome after making any changes.
